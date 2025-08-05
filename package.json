@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
     "@chakra-ui/react": "^3.24.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
