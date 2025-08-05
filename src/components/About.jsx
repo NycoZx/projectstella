@@ -12,9 +12,7 @@ function About() {
     >
       <h2>Sobre Mim</h2>
       <p>
-        Olá, meu nome é [Seu Nome] e sou um desenvolvedor front-end com
-        experiência em criar sites responsivos e interativos. Tenho paixão por
-        resolver problemas e criar soluções inovadoras.
+        Olá,[Stella] você é a mulher mais linda do mundo 
       </p>
     </motion.section>
   );
