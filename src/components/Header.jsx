@@ -42,7 +42,7 @@ function Header() {
           <Li><StyledLink to="/home">Home</StyledLink></Li>
           <Li><StyledLink to="/about">Sobre</StyledLink></Li>
           <Li><StyledLink to="/projects">Projetos</StyledLink></Li>
-          <Li><StyledLink to="/about">Sobre</StyledLink></Li>
+          <Li><StyledLink to="/contact">Contato</StyledLink></Li>
         </Ul>
       </Nav>
     </header>
