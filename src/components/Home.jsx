@@ -1,16 +1,30 @@
-import React from "react";
-import { motion } from "framer-motion";
-import styled from "styled-components";
+import React from 'react';
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
 
 const MainContainer = styled.div`
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #f06, #000000ff);
+  background: linear-gradient(135deg, #ff9a8b, #ff6a00);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 0 20px;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 `;
 
 const ContentSection = styled.section`
@@ -18,7 +32,7 @@ const ContentSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   padding: 50px;
   text-align: center;
@@ -62,7 +76,7 @@ const CTAButton = styled.button`
   }
 `;
 
-function Home() {
+const Home = () => {
   return (
     <MainContainer>
       <ContentSection>
@@ -80,7 +94,8 @@ function Home() {
           transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
         >
           <Subtitle>
-            Olá, Stella, você é perfeita
+            Olá, sou um desenvolvedor front-end apaixonado por criar sites interativos e
+            responsivos. Confira meus projetos abaixo!
           </Subtitle>
         </motion.div>
 
@@ -96,6 +111,6 @@ function Home() {
       </ContentSection>
     </MainContainer>
   );
-}
+};
 
 export default Home;
